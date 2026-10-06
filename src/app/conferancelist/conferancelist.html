@@ -1,0 +1,9 @@
+<section>
+  <h3>Liste des conférences</h3>
+
+  <ul>
+    @for (conference of conferences; track $index) {
+      <app-conference-details [conference]="conference" />
+    }
+  </ul>
+</section>
