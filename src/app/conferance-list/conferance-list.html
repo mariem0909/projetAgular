@@ -1,0 +1,12 @@
+<section class="conference-page" aria-labelledby="conference-title">
+  <div class="page-heading">
+    <span class="eyebrow">À ne pas manquer</span>
+    <h1 id="conference-title">Nos conférences</h1>
+    <p>Explorez les prochains rendez-vous et trouvez l’inspiration pour la suite.</p>
+  </div>
+  <div class="conference-grid">
+    @for (conference of conferances; track conference.name) {
+      <app-conferance-details [conf]="conference" (increment)="inc()"></app-conferance-details>
+    }
+  </div>
+</section>

@@ -1,0 +1,93 @@
+.conference-card {
+  display: flex;
+  min-height: 18rem;
+  flex-direction: column;
+  padding: 1.5rem;
+  border: 1px solid #e9e4f1;
+  border-radius: 1.25rem;
+  background: #fff;
+  box-shadow: 0 0.5rem 1.5rem rgb(50 35 82 / 5%);
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.conference-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0.9rem 2rem rgb(50 35 82 / 10%);
+}
+
+.conference-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.3rem;
+}
+
+.conference-icon {
+  display: grid;
+  width: 2.75rem;
+  height: 2.75rem;
+  place-items: center;
+  border-radius: 0.9rem;
+  color: #6847ce;
+  background: #f2edff;
+  font-size: 1.35rem;
+}
+
+.conference-tag {
+  padding: 0.4rem 0.65rem;
+  border-radius: 99px;
+  color: #5f4aa7;
+  background: #f2edff;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.conference-card h2 {
+  margin: 0 0 1.25rem;
+  color: #30264a;
+  font-size: 1.25rem;
+  letter-spacing: -0.025em;
+}
+
+.conference-meta {
+  display: grid;
+  gap: 0.85rem;
+  margin: 0 0 1.5rem;
+}
+
+.conference-meta dt {
+  margin-bottom: 0.2rem;
+  color: #827a91;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.conference-meta dd {
+  margin: 0;
+  color: #443b56;
+  font-size: 0.92rem;
+}
+
+.button {
+  min-height: 2.75rem;
+  margin-top: auto;
+  padding: 0.7rem 1rem;
+  border: 0;
+  border-radius: 0.7rem;
+  color: #fff;
+  background: #6948cb;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 150ms ease;
+}
+
+.button:hover {
+  background: #5637b4;
+}
+
+.button:focus-visible {
+  outline: 3px solid #30205f;
+  outline-offset: 3px;
+}

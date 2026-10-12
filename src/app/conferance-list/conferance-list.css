@@ -1,0 +1,45 @@
+.conference-page {
+  display: grid;
+  gap: 1.75rem;
+}
+
+.page-heading .eyebrow {
+  display: block;
+  margin: 0 0 0.45rem;
+  color: #766d8b;
+  font-size: 0.75rem;
+  font-weight: 750;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.page-heading h1 {
+  margin: 0;
+  color: #282238;
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  letter-spacing: -0.045em;
+}
+
+.page-heading p {
+  margin: 0.65rem 0 0;
+  color: #706981;
+  line-height: 1.6;
+}
+
+.conference-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+@media (max-width: 800px) {
+  .conference-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .conference-grid {
+    grid-template-columns: 1fr;
+  }
+}
